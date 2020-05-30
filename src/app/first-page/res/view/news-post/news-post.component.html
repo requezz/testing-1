@@ -1,0 +1,34 @@
+<div class="news">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        <app-item-post
+        [url]="getPost().url"
+        [subtitle]="getPost().subtitle"
+        [title]="getPost().title"
+        [text]="getPost().text"
+        [button]="getPost().button"
+        >
+
+        </app-item-post>
+      </div>
+
+      <div class="col-md-5">
+        <div class="sidebar">
+          <div class="next">
+            <li><a routerLink="/second" routerLinkActive="active"><button class="btn1">
+              Далее
+            </button> </a></li>
+          </div>
+          <app-sidebar *ngFor="let item of Items()"
+          [url]="item.url"
+          [title]="item.title"
+          [text]="item.text"
+          [read]="item.read"
+          >
+          </app-sidebar>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

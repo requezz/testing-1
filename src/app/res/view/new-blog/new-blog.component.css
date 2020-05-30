@@ -1,0 +1,20 @@
+.new {
+  margin-top: 100px;
+}
+
+.container {
+  max-width: 1024px;
+}
+
+.new-1 {
+  margin-bottom: 50px;
+  font-family: 'Rubik', sans-serif;
+}
+
+
+@media only screen and (max-width: 400px) {
+  .read {
+    margin-bottom: 20px;
+  }
+}
+

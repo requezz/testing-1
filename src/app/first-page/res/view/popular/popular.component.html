@@ -1,0 +1,20 @@
+<div class="cont4">
+  <div class="container">
+    <div class="popular"><h2>Popular Resources</h2></div>
+    <div class="row">
+      <div class="col-md-6">
+      <app-item-pop *ngFor="let item of getPopular()"
+      [url]="item.url"
+      [title]="item.title"
+      [text]="item.text"
+      [read]="item.read"
+      ></app-item-pop>
+      </div>
+      <div class="col-5">
+        <div class="url">
+          <img src="https://via.placeholder.com/500x480?text=Visit" class="images" />
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>

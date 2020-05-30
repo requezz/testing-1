@@ -1,0 +1,30 @@
+<div class="cont16">
+  <div class="container justify-content-between">
+    <div class="row" *ngFor = "let item of getMailBox()">
+      <div class="col-md-6">
+        <div class="text">
+          <div class="ready">
+            <h1>
+              {{item.title}}
+            </h1>
+          </div>
+          <div class="text-1">
+            {{item.text}}
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="input text-right">
+          <span class="enter">{{item.input}}</span>
+          <button type="button" class="btn btn1">{{item.button}}</button>
+        </div>
+        <div class="text-3">
+        <span class="bolt">
+          <i class="fa fa-bolt" aria-hidden="true">{{item.subtext}}</i>
+        </span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

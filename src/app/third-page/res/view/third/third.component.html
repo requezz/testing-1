@@ -1,0 +1,9 @@
+<app-home></app-home>
+<app-news *ngFor="let database of getThird()"
+  [url]="database.url"
+  [title]="database.title"
+  [name]="database.name"
+  [data]="database.data"
+  [text]="database.text"
+  [keep]="database.keep"
+></app-news>

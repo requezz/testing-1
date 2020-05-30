@@ -1,0 +1,31 @@
+<div class="cont15">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-7" *ngFor="let item of getComment()">
+        <hr>
+        <div class="cont-15">
+          <div class="cont-15-1">
+            <div>
+              <img src="{{item.url}}" class="image">
+            </div>
+            <div class="text">
+              <div class="text-1">{{item.name}}</div>
+              <div class="text-2">{{item.text}}</div>
+            </div>
+          </div>
+          <div class="text-1-1">
+            <div class="me">{{item.subtext}}</div>
+            <div class="icon">
+              <div class="icon-1">
+                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+              </div>
+              <div class="icon-1">
+                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

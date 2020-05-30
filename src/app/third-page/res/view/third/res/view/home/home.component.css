@@ -1,0 +1,37 @@
+.home {
+  margin: 20px 0 50px 0;
+}
+
+.hm {
+  opacity: .6;
+}
+
+.hm:hover {
+  color: dodgerblue;
+}
+
+.text-1-2:hover {
+  color: dodgerblue;
+}
+
+.btn2 {
+  border: none;
+  background-color: blue;
+  color: white;
+  border-radius: 3px;
+}
+
+.back {
+  top: 40px;
+  left: 10px;
+  position: absolute;
+}
+
+.btn-2 {
+  position: relative;
+}
+
+li {
+  list-style: none;
+}
+

@@ -1,0 +1,15 @@
+<div class="cont5 d-flex">
+  <div class="container">
+    <div class="up"><h2>Upcoming Events</h2></div>
+    <div class="row">
+      <div class="col-md-4" *ngFor="let item of getUpcoming()">
+       <app-events
+       [url]="item.url"
+       [title]="item.title"
+       [text]="item.text"
+       [read]="item.read"
+       ></app-events>
+      </div>
+    </div>
+  </div>
+</div>
